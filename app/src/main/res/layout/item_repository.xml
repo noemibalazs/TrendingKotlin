@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvRepositoryContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:elevation="6dp"
+        app:cardCornerRadius="@dimen/margin_normal"
+        app:strokeColor="@color/grey_dark"
+        app:strokeWidth="2dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRepoName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/philosopher_bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_huge"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Repo's name: Jetbrains Kotlin" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRepoDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:fontFamily="@font/philosopher_regular"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvRepoName"
+                tools:text="Lorem ipsum dolor sit amet" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvUpdated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:fontFamily="@font/philosopher_regular"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_medium"
+                app:layout_constraintVertical_bias="0."
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvRepoDescription"
+                tools:text="Updated: 12-06-21" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvWatchers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:fontFamily="@font/philosopher_bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_large"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvUpdated"
+                tools:text="Watchers: 12" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

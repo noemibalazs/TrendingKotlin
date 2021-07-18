@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Trending Kotlin</string>
+    <string name="txt_repository_details">Repository Details</string>
+    <string name="txt_search_by_stars">Filter repositories by stars</string>
+    <string name="txt_clear">Clear</string>
+    <string name="txt_description">Description: %s</string>
+    <string name="txt_updated">Updated: %s</string>
+    <string name="txt_watchers">Watchers: %d</string>
+    <string name="txt_size">Size: %d</string>
+    <string name="txt_forks">Forks: %d</string>
+    <string name="txt_open_issues">Open issues: %d</string>
+    <string name="txt_read_me">Read Me</string>
+    <string name="txt_search_should_not_be_empty">The search field should not be null!</string>
+    <string name="txt_try_it_again_error">Try it again, maybe with another value!</string>
+</resources>
