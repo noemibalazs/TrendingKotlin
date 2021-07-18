@@ -69,7 +69,7 @@ class RepositoryDetailsActivity : AppCompatActivity() {
         scrollPositions?.let {
             Handler(Looper.getMainLooper()).postDelayed({
                 binding.nsDetails.scrollTo(it[0], it[1])
-            }, 600L)
+            }, 900L)
         }
     }
 

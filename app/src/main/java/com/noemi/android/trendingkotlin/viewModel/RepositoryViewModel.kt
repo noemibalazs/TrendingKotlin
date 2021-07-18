@@ -114,7 +114,7 @@ class RepositoryViewModel @Inject constructor(
         compositeDisposable.addAll(disposable1, disposable2)
     }
 
-    private fun loadRepositoryDetails(id: Int): Disposable {
+    fun loadRepositoryDetails(id: Int): Disposable {
         Log.d(TAG, "loadRepositoryDetails() - id: $id")
         return gitHubRemoteService.getRepositoryDetails(id)
             .subscribeOn(Schedulers.io())
@@ -139,7 +139,7 @@ class RepositoryViewModel @Inject constructor(
             })
     }
 
-    private fun loadRepositoryReadMe(name: String, repo: String): Disposable {
+    fun loadRepositoryReadMe(name: String, repo: String): Disposable {
         Log.d(TAG, "loadRepositoryReadMe()")
         return gitHubRemoteService.getRepositoryReadMe(name, repo)
             .subscribeOn(Schedulers.io())
