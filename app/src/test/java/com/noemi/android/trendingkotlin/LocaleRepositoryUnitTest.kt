@@ -24,14 +24,6 @@ class LocaleRepositoryUnitTest {
     private lateinit var repositoryDAO: RepositoryDAO
     private val context: Context = mock()
     private val repositoryEntity: RepositoryEntity = mock()
-    private val entity = RepositoryEntity(
-        id = 12,
-        name = "kotlinx.coroutines",
-        fullName = "kotlin/coroutines",
-        description = "Library support for Kotlin coroutines",
-        updated = "2021-07-21",
-        stargazers = 21
-    )
 
 
     @get:Rule

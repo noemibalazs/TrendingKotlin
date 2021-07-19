@@ -46,7 +46,7 @@ class RepositoryDetailsActivity : AppCompatActivity() {
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
-        val scrollPositions = arrayListOf<Int>(binding.nsDetails.scrollX, binding.nsDetails.scrollY)
+        val scrollPositions = arrayListOf(binding.nsDetails.scrollX, binding.nsDetails.scrollY)
         outState.putParcelable(KEY_REPOSITORY_DETAILS, viewModel.repositoryDetails.value)
         outState.putParcelable(KEY_REPOSITORY_READ_ME, viewModel.repositoryReadMe.value)
         outState.putIntegerArrayList(KEY_SCROLL_POSITIONS, scrollPositions)

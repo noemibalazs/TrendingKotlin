@@ -18,16 +18,16 @@ class RepositoryVH(
             tvRepoName.text = repository.name
             tvRepoDescription.text = repository.description
 
-            tvUpdated.text = String.format(
+            tvRepoUpdated.text = String.format(
                 itemView.context.getString(R.string.txt_updated),
                 repository.updated.displayData()
             )
-            tvWatchers.text = String.format(
+            tvRepoWatchers.text = String.format(
                 itemView.context.getString(R.string.txt_watchers),
                 repository.stargazersCount
             )
 
-            cvRepositoryContainer.setOnClickListener(object : OneTimeClickListener() {
+            cvRepoContainer.setOnClickListener(object : OneTimeClickListener() {
                 override fun oneTimeClick(v: View) {
                     repositoryClickListener?.invoke(repository)
                 }

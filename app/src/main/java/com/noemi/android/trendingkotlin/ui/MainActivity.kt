@@ -2,8 +2,6 @@ package com.noemi.android.trendingkotlin.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.util.Log
 import androidx.core.view.isVisible
 import androidx.databinding.DataBindingUtil

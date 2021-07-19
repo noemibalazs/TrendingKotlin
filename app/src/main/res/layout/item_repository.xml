@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cvRepositoryContainer"
+        android:id="@+id/cvRepoContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/margin_medium"
@@ -46,7 +46,7 @@
                 tools:text="Lorem ipsum dolor sit amet" />
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tvUpdated"
+                android:id="@+id/tvRepoUpdated"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_small"
@@ -60,7 +60,7 @@
                 tools:text="Updated: 12-06-21" />
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tvWatchers"
+                android:id="@+id/tvRepoWatchers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_small"
@@ -69,7 +69,7 @@
                 android:textSize="@dimen/text_size_large"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvUpdated"
+                app:layout_constraintTop_toBottomOf="@id/tvRepoUpdated"
                 tools:text="Watchers: 12" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

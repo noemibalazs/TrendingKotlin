@@ -1,9 +1,7 @@
 package com.noemi.android.trendingkotlin
 
 import android.os.Build
-import com.noemi.android.trendingkotlin.api.model.Repository
 import com.noemi.android.trendingkotlin.room.RepositoryEntity
-import org.junit.Assert
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotEquals
 import org.junit.Test
